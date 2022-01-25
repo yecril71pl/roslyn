@@ -25,6 +25,8 @@ jobs:
         for s in restore.sh build.sh
         do bash "${s}"
         done && git status &&
+        git config --global user.email 'ne01026@shark.2a.pl' && 
+        git config --global user.name 'Christopher Yeleighton' &&
         git add src/Compilers/CSharp/Portable/xlf/CSharpResources.*.xlf &&
         git commit -m 'CSharpResources: translation base update' &&
         git push
