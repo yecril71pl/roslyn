@@ -19,4 +19,4 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Build
-      run: pwsh -ExecutionPolicy ByPass -NoProfile -command "& """%~dp0eng\build.ps1""" -build "
+      run: pwsh -ExecutionPolicy ByPass -NoProfile -command '& eng/build.ps1 -build '
