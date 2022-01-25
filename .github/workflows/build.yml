@@ -23,3 +23,5 @@ jobs:
         for s in restore.sh build.sh
         do bash "${s}"
         done
+    - name: Filter Git Diff
+      uses: groupninemedia/filter-git-diff@v0.1
