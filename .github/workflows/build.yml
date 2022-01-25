@@ -24,4 +24,7 @@ jobs:
       run: |
         for s in restore.sh build.sh
         do bash "${s}"
-        done && git status
+        done && git status &&
+        git add src/Compilers/CSharp/Portable/xlf/CSharpResources.*.xlf &&
+        git commit -m 'CSharpResources: translation base update' &&
+        git push
